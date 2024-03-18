@@ -42,16 +42,16 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
-builder.Services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll",
-                    builder =>
-                    {
-                        builder.AllowAnyOrigin()
-                               .AllowAnyMethod()
-                               .AllowAnyHeader();
-                    });
-            });
+// builder.Services.AddCors(options =>
+//             {
+//                 options.AddPolicy("AllowAll",
+//                     builder =>
+//                     {
+//                         builder.AllowAnyOrigin()
+//                                .AllowAnyMethod()
+//                                .AllowAnyHeader();
+//                     });
+//             });
 
 var app = builder.Build();
 
